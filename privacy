@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy — SF PermLens (Permission Manager for Salesforce)</title>
+<style>
+  :root{--bg:#0d1118;--card:#171f32;--border:#293659;--text:#e4ecf7;--muted:#8899be;--accent:#4d8dff;}
+  *{box-sizing:border-box;}
+  body{margin:0;background:var(--bg);color:var(--text);font-family:'Inter',system-ui,-apple-system,"Segoe UI",sans-serif;line-height:1.7;-webkit-font-smoothing:antialiased;}
+  .wrap{max-width:780px;margin:0 auto;padding:48px 22px 80px;}
+  header{border-bottom:1px solid var(--border);padding-bottom:18px;margin-bottom:8px;}
+  h1{font-size:26px;margin:0 0 12px;letter-spacing:-.3px;}
+  .meta{font-size:13px;color:var(--muted);}
+  .meta strong{color:var(--text);}
+  h2{font-size:17px;margin:30px 0 8px;}
+  p,li{font-size:14px;color:#cdd8ef;}
+  ul{padding-left:20px;}
+  a{color:var(--accent);}
+  table{width:100%;border-collapse:collapse;margin:10px 0;font-size:13px;}
+  th,td{text-align:left;padding:9px 12px;border:1px solid var(--border);vertical-align:top;}
+  th{background:var(--card);color:var(--text);}
+  td{color:#cdd8ef;}
+  code{background:var(--card);border:1px solid var(--border);border-radius:4px;padding:1px 6px;font-size:12px;}
+  footer{margin-top:40px;padding-top:18px;border-top:1px solid var(--border);font-size:12px;color:var(--muted);}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <h1>Privacy Policy — SF PermLens (Permission Manager for Salesforce)</h1>
+  <div class="meta">
+    <div><strong>Last updated:</strong> 27 June 2026</div>
+    <div><strong>Developer / Publisher:</strong> Vasanth</div>
+    <div><strong>Contact:</strong> <a href="mailto:vasanthkthirumakottai@gmail.com">vasanthkthirumakottai@gmail.com</a></div>
+  </div>
+</header>
+
+<h2>Summary</h2>
+<p>SF PermLens does not collect, store, or transmit any personal data, Salesforce org data, or usage analytics to the developer or to any third party. The extension runs entirely inside your browser and communicates only with the Salesforce instance you are already logged into.</p>
+
+<h2>What the extension does</h2>
+<p>SF PermLens lets a logged-in Salesforce administrator view, compare, clone, build and assign Salesforce permissions and access, directly from a browser tab. It is a client-side tool: there is no backend server operated by the developer, and the extension never communicates with any server other than your own Salesforce org.</p>
+<p>It works with the permission-related configuration in your org, including:</p>
+<ul>
+  <li><strong>Object</strong> (CRUD) and <strong>Field-Level Security</strong> permissions.</li>
+  <li><strong>Apex class</strong> and <strong>Visualforce page</strong> access.</li>
+  <li><strong>Flow</strong>, <strong>Named Credential</strong>, <strong>Custom Metadata Type</strong>, and <strong>Tab</strong> access.</li>
+  <li><strong>System / user permissions</strong> (the standard <code>PermissionsXxx</code> settings) and <strong>Custom Permissions</strong>.</li>
+  <li><strong>Profiles</strong>, <strong>Permission Sets</strong>, <strong>Permission Set Groups</strong> (including member and muting sets), and <strong>User</strong> assignments.</li>
+</ul>
+<p>To support these features, the extension can both <strong>read</strong> this configuration and, when you explicitly confirm a write, <strong>make changes</strong> to it on your behalf — for example bulk-editing permissions, cloning permissions into a permission set, creating a permission set or permission set group, and <strong>assigning or removing a permission set / group to or from a user</strong>. Every change is previewed and requires your confirmation before it is sent, and all changes are made under your own Salesforce login and recorded by Salesforce under your user.</p>
+
+<h2>Data we access</h2>
+<p>To function, the extension reads the following information that already exists in your browser:</p>
+<ul>
+  <li><strong>Your Salesforce session cookie (<code>sid</code>)</strong> — used to make authenticated REST API calls to your Salesforce org on your behalf, the same way the Salesforce web UI itself does. This is the only way the extension can act as you without requiring a separate login.</li>
+  <li><strong>Open tab URLs</strong> — used only to detect which open browser tab is a Salesforce tab, so the extension can auto-connect to the right org without you manually pasting a URL.</li>
+</ul>
+
+<h2>Data we do not collect</h2>
+<p>The extension does not collect, log, or transmit: your name, email, IP address, browsing history, Salesforce record data, permission configurations, usage analytics, crash reports, or any other personal or organizational data — to the developer or to any third party. There is no analytics SDK, telemetry call, or remote logging of any kind built into the extension.</p>
+
+<h2>Where your data goes</h2>
+<p>All Salesforce data the extension reads or writes — profiles, permission sets, permission set groups, object/field/Apex/VF/Flow/Named Credential/Custom Metadata/Tab permissions, system and custom permissions, user lists, and user assignments — travels in exactly one path: <strong>directly between your browser and your own Salesforce org's API</strong> (<code>*.salesforce.com</code>, <code>*.force.com</code>, <code>*.my.salesforce.com</code>, <code>*.lightning.force.com</code>, <code>*.visualforce.com</code>, <code>*.salesforce-setup.com</code>, <code>*.salesforce-experience.com</code>). The extension validates every outgoing request against an allowlist of Salesforce domains before sending it, and will block any request to a non-Salesforce destination. No data is ever sent to a server operated by the developer, and no third-party SDKs or analytics are integrated into the extension. (The footer's optional GitHub and Ko-fi links open in a new browser tab only when you click them — see "Help &amp; feedback links" below.)</p>
+
+<h2>What is stored, and where</h2>
+<ul>
+  <li><strong>Nothing is stored remotely.</strong> The developer does not operate any database or server that receives or retains your data.</li>
+  <li><strong>Nothing Salesforce-related is stored locally, either.</strong> Org data you view or edit exists only in the extension's in-memory state while its tab is open, and is discarded the moment that tab is closed or refreshed.</li>
+  <li><strong>One non-sensitive preference is stored locally:</strong> a UI theme setting (dark/light mode), saved in the extension's own isolated browser storage. This contains no personal or org data and is never transmitted anywhere.</li>
+  <li><strong>Your Salesforce session token is held in memory only</strong> for the duration of each individual API call and is never written to disk, browser storage, or any log.</li>
+</ul>
+
+<h2>Permissions used, and why</h2>
+<table>
+  <tr><th>Permission</th><th>Why it's needed</th></tr>
+  <tr><td><code>cookies</code></td><td>Reads your existing Salesforce session cookie so the extension can make authenticated API calls without a separate login flow.</td></tr>
+  <tr><td><code>tabs</code></td><td>Detects which open browser tab is a Salesforce session, so the extension can connect automatically.</td></tr>
+  <tr><td><code>scripting</code></td><td>Used as a fallback to read the session cookie directly from an active Salesforce tab if the standard cookie lookup doesn't find it; only runs on tabs covered by the host permissions below.</td></tr>
+  <tr><td>Host permissions (<code>*.salesforce.com</code>, <code>*.force.com</code>, etc.)</td><td>Restricts where the extension can read cookies, inject scripts, or send requests to Salesforce-owned domains only.</td></tr>
+</table>
+
+<h2>Help &amp; feedback links (optional)</h2>
+<p>The footer includes an optional <strong>Help</strong> menu and a <strong>Support</strong> link. These are plain links you choose whether to click; the extension transmits nothing on its own:</p>
+<ul>
+  <li><strong>Email us</strong> opens your own email application with the address pre-filled — you decide whether to send. No Salesforce org data, session token, or browsing data is included.</li>
+  <li><strong>Report an issue on GitHub</strong> opens the project's public GitHub issues page in a new browser tab. Anything you choose to post there is governed by GitHub's own privacy policy.</li>
+  <li><strong>Support me on Ko-fi</strong> opens the developer's Ko-fi page in a new browser tab. Any donation is handled entirely on Ko-fi's platform under Ko-fi's privacy policy; the extension neither processes nor sees any payment information.</li>
+</ul>
+<p>These links do not load any third-party code into the extension and send no data automatically — they simply navigate a new tab when clicked.</p>
+
+<h2>Third-party services</h2>
+<p>The extension integrates <strong>no third-party SDKs, analytics, advertising, or error-tracking</strong> of any kind, and loads no remote code. It does provide the optional outbound links described above (GitHub and Ko-fi), which open in a new browser tab only when you click them; opening them is subject to those sites' own privacy policies.</p>
+
+<h2>Children's privacy</h2>
+<p>This extension is a business productivity tool intended for Salesforce administrators and developers, and is not directed at children. It does not knowingly collect data from children.</p>
+
+<h2>Security</h2>
+<p>Because all activity happens directly between your browser and your own Salesforce org, the security of your data is governed primarily by your existing Salesforce session and your organization's own access controls. The extension restricts its own network activity to Salesforce domains only and does not introduce any additional remote attack surface.</p>
+
+<h2>Changes to this policy</h2>
+<p>If this policy changes, the "Last updated" date above will be revised and the updated policy will be posted at the same location. Material changes will be reflected in the Chrome Web Store listing.</p>
+
+<h2>Contact</h2>
+<p>Questions about this policy or the extension's data practices can be sent to <a href="mailto:vasanthkthirumakottai@gmail.com">vasanthkthirumakottai@gmail.com</a>.</p>
+
+<footer>SF PermLens — Permission Manager for Salesforce. This is an independent tool and is not affiliated with, endorsed by, or sponsored by Salesforce, Inc.</footer>
+</div>
+</body>
+</html>
