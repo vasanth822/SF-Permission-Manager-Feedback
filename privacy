@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Privacy Policy — SF PermLens (Permission Manager for Salesforce)</title>
+<title>Privacy Policy — SF Permission Studio</title>
 <style>
   :root{--bg:#0d1118;--card:#171f32;--border:#293659;--text:#e4ecf7;--muted:#8899be;--accent:#4d8dff;}
   *{box-sizing:border-box;}
@@ -28,7 +28,7 @@
 <body>
 <div class="wrap">
 <header>
-  <h1>Privacy Policy — SF PermLens (Permission Manager for Salesforce)</h1>
+  <h1>Privacy Policy — SF Permission Studio</h1>
   <div class="meta">
     <div><strong>Last updated:</strong> 27 June 2026</div>
     <div><strong>Developer / Publisher:</strong> Vasanth</div>
@@ -37,10 +37,10 @@
 </header>
 
 <h2>Summary</h2>
-<p>SF PermLens does not collect, store, or transmit any personal data, Salesforce org data, or usage analytics to the developer or to any third party. The extension runs entirely inside your browser and communicates only with the Salesforce instance you are already logged into.</p>
+<p>SF Permission Studio does not collect, store, or transmit any personal data, Salesforce org data, or usage analytics to the developer or to any third party. The extension runs entirely inside your browser and communicates only with the Salesforce instance you are already logged into.</p>
 
 <h2>What the extension does</h2>
-<p>SF PermLens lets a logged-in Salesforce administrator view, compare, clone, build and assign Salesforce permissions and access, directly from a browser tab. It is a client-side tool: there is no backend server operated by the developer, and the extension never communicates with any server other than your own Salesforce org.</p>
+<p>SF Permission Studio lets a logged-in Salesforce administrator view, compare, clone, build and assign Salesforce permissions and access, directly from a browser tab. It is a client-side tool: there is no backend server operated by the developer, and the extension never communicates with any server other than your own Salesforce org.</p>
 <p>It works with the permission-related configuration in your org, including:</p>
 <ul>
   <li><strong>Object</strong> (CRUD) and <strong>Field-Level Security</strong> permissions.</li>
@@ -105,7 +105,7 @@
 <h2>Contact</h2>
 <p>Questions about this policy or the extension's data practices can be sent to <a href="mailto:vasanthkthirumakottai@gmail.com">vasanthkthirumakottai@gmail.com</a>.</p>
 
-<footer>SF PermLens — Permission Manager for Salesforce. This is an independent tool and is not affiliated with, endorsed by, or sponsored by Salesforce, Inc.</footer>
+<footer>SF Permission Studio. This is an independent tool and is not affiliated with, endorsed by, or sponsored by Salesforce, Inc.</footer>
 </div>
 </body>
 </html>
